@@ -26,7 +26,7 @@
         <div class="image-container"><img id="hex" src="img/hex.png" height="200" width="200"/></div>
         <div class="image-container"><img id="rec" src="img/rec.png" height="200" width="200"/></div>
         <div class="image-container"><img id="sta" src="img/sta.png" height="200" width="200"/></div>
-        </div>
+    </div>
 
     <div class="row">
         <div class="image-container"><img src="img/trr.png" height="200" width="200"/></div>
@@ -53,6 +53,19 @@
     const squ_audio = new Audio ('audio/rolling.mp3')
     squ.onpointerdown = () => squ_audio.play ()
 </script>
+
+<script>
+    const hex = document.getElementById ('hex')
+    const hex_audio = new Audio ('audio/metalding.mp3')
+    hex.onpointerdown = () => hex_audio.play ()
+</script>
+
+<script>
+    const rec = document.getElementById ('rec')
+    const rec_audio = new Audio ('audio/walking.mp3')
+    rec.onpointerdown = () => rec_audio.play ()
+</script>
+
 
 </html>
 
