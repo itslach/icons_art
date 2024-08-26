@@ -11,15 +11,6 @@
             vertical-align: middle;
             padding:20px;
         }
-    
-         pre#donut {
-         font-family: monospace;
-         line-height: 1.1em;
-         color: #333;
-         text-align: center;
-         white-space: pre;
-         font-size: 16px;  /* Adjust this value to make the text larger */
-}
  </style>
 </head>
 
@@ -41,11 +32,13 @@
         <div class="image-container"><img src="img/trr.png" height="200" width="200"/></div>
         <div class="image-container"><img src="img/sqr.png" height="200" width="200"/></div>
         <div class="image-container"><img src="img/her.png" height="200" width="200"/></div>
-    </div>
-   
-    <pre id="donut"></pre>
-    
-    <script src="donut.js"></script> <!-- Link to your JavaScript file -->
+    </div>   
 </body>
-</html>
+
+<script>
+    const cir = document.getElementById ('cir')
+    const cir_audio = new Audio ('audio/elevator.mp3')
+    cir.onpointerdown = () => cir_audio.play ()
+</script>
+
 
