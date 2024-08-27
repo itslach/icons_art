@@ -17,11 +17,11 @@
 <body>
 
     <div class="row">
-        <div class="image-container"><img id="icon1" src="icon/icon1.png" height="200" width="200" /></div>
+        <div class="image-container"><img id="icon1" src="icon/icon1.png" alt="Icon 2" height="200" width="200" /></div>
         <div class="image-container"><img id="icon2" src="icon/icon2.png" height="200" width="200" /></div>
         <div class="image-container"><img id="icon3" src="icon/icon3.png" height="200" width="200" /></div>
     </div>
-
+ 
     <div class="row">
         <div class="image-container"><img id="icon4" src="icon/icon4.png" height="200" width="200"/></div>
         <div class="image-container"><img id="rec" src="img/rec.png" height="200" width="200"/></div>
@@ -59,37 +59,4 @@
             icon2_variable.src = 'icon/icon2.png';
         };
     </script>
-</body>
-
-
-<script>
-    const icon2 = document.getElementById ('icon2')
-    const icon2_audio = new Audio ('audio/icon2sound.mp3')
-    icon2.onpointerdown = () => icon2_audio.play ()
-</script>
-
-<script>
-    const icon3 = document.getElementById ('icon3')
-    const icon3_audio = new Audio ('audio/icon3sound.mp3')
-    icon3.onpointerdown = () => icon3_audio.play ()
-</script>
-
-<script>
-    const icon4 = document.getElementById ('icon4')
-    const icon4_audio = new Audio ('audio/metalding.mp3')
-    icon4.onpointerdown = () => icon4_audio.play ()
-</script>
-
-<script>
-    const rec = document.getElementById ('rec')
-    const rec_audio = new Audio ('audio/walking.mp3')
-    rec.onpointerdown = () => rec_audio.play ()
-</script>
-
-
-
-
-
-
-</html>
 
