@@ -40,6 +40,13 @@
     const icon1 = document.getElementById ('icon1')
     const icon1_audio = new Audio ('audio/icon1sound.mp3')
     icon1.onpointerdown = () => icon1_audio.play ()
+    icon1.onpointerhover = () =>{
+        icon1_varible.src = 'icon/icon2.png'
+    }
+    icon1_variable.onpointerout = () => {
+        icon1_variable.src = "icon/icon1.png"
+    }
+    
 </script>
 
 <script>
@@ -66,12 +73,6 @@
     rec.onpointerdown = () => rec_audio.play ()
 </script>
 
-<div class="icon-container">
-    <img id="icon1" src="icon/icon1.png" alt="Icon 1" onclick="changeIcon('icon1', 'icon/icon2.png')" />
-    <img id="icon2" src="img/icon2.png" alt="Icon 2" onclick="changeIcon('icon2', 'img/newIcon2.png')" />
-    <img id="icon3" src="img/icon3.png" alt="Icon 3" onclick="changeIcon('icon3', 'img/newIcon3.png')" />
-    <!-- Add more icons as needed -->
-</div>
 
 
 
