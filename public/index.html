@@ -17,8 +17,8 @@
 <body>
 
     <div class="row">
-        <div class="image-container"><img id="icon1" src="icon/icon1.png" height="200" width="200" /></div>
-        <div class="image-container"><img id="icon2" src="icon/icon2.png" height="200" width="200" /></div>
+        <div class="image-container"><img id="cir" src="icon/icon1.png" height="200" width="200" /></div>
+        <div class="image-container"><img id="tri" src="icon/icon2.png" height="200" width="200" /></div>
         <div class="image-container"><img id="icon3" src="icon/icon3.png" height="200" width="200" /></div>
     </div>
  
@@ -35,36 +35,38 @@
     </div>
    
     <script>
-        const icon1_variable = document.getElementById ('icon1_id')
-        const icon1_audio = new Audio ('audio/icon1sound.mp3')
-        icon1_variable.onpointerdown = () => icon1_audio.play ()
+        const cir_variable = document.getElementById ('cir_id')
+        const cir_audio = new Audio ('sounds/1.mp3')
+        cir_variable.onpointerdown = () => cir_audio.play ()
     </script>
-     
-    <script>
-    
-        const icon1_variable = document.getElementById ('icon1_id')
-        const icon1_audio = new Audio ('audio/icon1sound.mp3')
-    
-        icon1_variable.onpointerdown = () => {
-            icon1_audio.play ()
-            icon1_variable.src = 'icon/icon1.png'
-            setTimeout (() => { 
-                icon2_variable.src = 'icon/icon2.png'
-            }, 1000)
-        }
-    
-        const icon2_variable = document.getElementById ('icon2_id')
-        const icon2_audio = new Audio ('audio/icon1sound.mp3')
-    
-        icon2_variable.onpointerdown = () => icon2_audio.play ()
-    
-        icon2_variable.onpointerover = () => {
-            icon2_variable.src = 'icon/icon2.png'
-        }
-    
-        icon2_variable.onpointerout = () => {
-            icon1_variable.src = 'icon/icon1.png'
-        }
-    
-    </script> 
 
+<script>
+
+    const cir_variable = document.getElementById ('cir_id')
+    const cir_audio = new Audio ('sounds/1.mp3')
+
+    cir_variable.onpointerdown = () => {
+        cir_audio.play ()
+        cir_variable.src = 'img/tri.png'
+        setTimeout (() => { 
+            cir_variable.src = 'img/cir.png'
+        }, 1000)
+    }
+
+    const tri_variable = document.getElementById ('tri_id')
+    const tri_audio = new Audio ('sounds/2.mp3')
+
+    tri_variable.onpointerdown = () => tri_audio.play ()
+
+    tri_variable.onpointerover = () => {
+        tri_variable.src = 'img/squ.png'
+    }
+
+    tri_variable.onpointerout = () => {
+        tri_variable.src = 'img/tri.png'
+    }
+
+</script>
+</body>
+
+</html>
