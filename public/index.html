@@ -17,7 +17,7 @@
 <body>
 
     <div class="row">
-        <div class="image-container"><img id="icon1" src="icon/icon1.png" alt="icon2" height="200" width="200" /></div>
+        <div class="image-container"><img id="icon1" src="icon/icon1.png" height="200" width="200" /></div>
         <div class="image-container"><img id="icon2" src="icon/icon2.png" height="200" width="200" /></div>
         <div class="image-container"><img id="icon3" src="icon/icon3.png" height="200" width="200" /></div>
     </div>
@@ -35,28 +35,36 @@
     </div>
    
     <script>
-        const icon1_variable = document.getElementById('icon1_id');
-        const icon1_audio = new Audio('audio/icon1sound.mp3');
-
-        icon1_variable.onpointerdown = () => {
-            icon1_audio.play();
-            icon1_variable.src = 'icon/icon1.png';
-            setTimeout(() => {
-                icon1_variable.src = 'icon/icon2.png';
-            }, 1000);
-        };
-
-        const icon2_variable = document.getElementById('icon2_id');
-        const icon2_audio = new Audio('audio/icon1sound.mp3');
-
-        icon2_variable.onpointerdown = () => icon2_audio.play();
-
-        icon2_variable.onpointerover = () => {
-            icon2_variable.src = 'icon/icon1.png';
-        };
-
-        icon2_variable.onpointerout = () => {
-            icon2_variable.src = 'icon/icon2.png';
-        };
+        const icon1_variable = document.getElementById ('icon1_id')
+        const icon1_audio = new Audio ('audio/icon1sound.mp3')
+        icon1_variable.onpointerdown = () => icon1_audio.play ()
     </script>
+     
+    <script>
+    
+        const icon1_variable = document.getElementById ('icon1_id')
+        const icon1_audio = new Audio ('audio/icon1sound.mp3')
+    
+        icon1_variable.onpointerdown = () => {
+            icon1_audio.play ()
+            icon1_variable.src = 'icon/icon1.png'
+            setTimeout (() => { 
+                icon2_variable.src = 'icon/icon2.png'
+            }, 1000)
+        }
+    
+        const icon2_variable = document.getElementById ('icon2_id')
+        const icon2_audio = new Audio ('audio/icon1sound.mp3')
+    
+        icon2_variable.onpointerdown = () => icon2_audio.play ()
+    
+        icon2_variable.onpointerover = () => {
+            icon2_variable.src = 'icon/icon2.png'
+        }
+    
+        icon2_variable.onpointerout = () => {
+            icon1_variable.src = 'icon/icon1.png'
+        }
+    
+    </script> 
 
