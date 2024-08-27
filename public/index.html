@@ -34,18 +34,15 @@
         <div class="image-container"><img src="img/her.png" height="200" width="200"/></div>
     </div>
    
-    <img id="icon1_id" src="icon/icon1.png" alt="Icon 1" />
-    <img id="icon2_id" src="icon/icon2.png" alt="Icon 2" />
-
     <script>
         const icon1_variable = document.getElementById('icon1_id');
         const icon1_audio = new Audio('audio/icon1sound.mp3');
 
         icon1_variable.onpointerdown = () => {
             icon1_audio.play();
-            icon1_variable.src = 'icon/icon2.png';
+            icon1_variable.src = 'icon/icon1.png';
             setTimeout(() => {
-                icon1_variable.src = 'icon/icon1.png';
+                icon1_variable.src = 'icon/icon2.png';
             }, 1000);
         };
 
@@ -64,11 +61,6 @@
     </script>
 </body>
 
-<script>
-    const icon1 = document.getElementById ('icon1')
-    const icon1_audio = new Audio ('audio/icon1sound.mp3')
-    icon1.onpointerdown = () => icon1_audio.play ()
-</script>
 
 <script>
     const icon2 = document.getElementById ('icon2')
