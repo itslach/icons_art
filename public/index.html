@@ -94,6 +94,19 @@
 }
 </script>
 
+<script>
+    const icon6_variable = document.getElementById ('icon6')
+    const icon6_audio = new Audio ('audio/icon6sound.mp3')
+    icon6variable.onpointerdown = () => {
+     icon6_audio.play ()
+     icon6_variable.src = 'newicons/icon6.2.png'
+    setTimeout (() => { 
+    icon6_variable.src = 'newicons/icon6.png'
+}, 2000)
+}
+</script>
+
+
 
 
 
