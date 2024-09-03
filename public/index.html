@@ -17,7 +17,7 @@
 <body>
 
     <div class="row">
-        <div class="image-container"><img id="icon1" src="newicons/experiment.png" height="200" width="200" /></div>
+        <div class="image-container"><img id="icon1" src="newicons/icon1" height="200" width="200" /></div>
         <div class="image-container"><img id="icon2" src="newicons/icon2.png" height="200" width="200" /></div>
         <div class="image-container"><img id="icon3" src="newicons/icon3.png" height="200" width="200" /></div>
     </div>
@@ -39,9 +39,9 @@
         const icon1_audio = new Audio ('audio/icon1sound.mp3')
         icon1_variable.onpointerdown = () => {
          icon1_audio.play ()
-         icon1_variable.src = 'newicons/experiment.2.png'
+         icon1_variable.src = 'newicons/icon1.2.png'
         setTimeout (() => { 
-        icon1_variable.src = 'newicons/experiment.png'
+        icon1_variable.src = 'newicons/icon1.png'
     }, 2000)
 }
 </script>
