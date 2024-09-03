@@ -130,6 +130,18 @@
 }
 </script>
 
+<script>
+    const icon9_variable = document.getElementById ('icon9')
+    const icon9_audio = new Audio ('audio/magic.mp3')
+    icon9_variable.onpointerdown = () => {
+     icon9_audio.play ()
+     icon9_variable.src = 'newicons/icon9.2.png'
+    setTimeout (() => { 
+    icon9_variable.src = 'newicons/icon9.png'
+}, 2000)
+}
+</script>
+
 
 
 
